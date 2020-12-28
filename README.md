@@ -6,4 +6,4 @@
 I build This webpage to aply JavaScript and CSS language 
 
 
-## Author: *Ruba Bnaat*
+## Author: *Ruba Banat*
