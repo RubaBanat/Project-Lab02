@@ -41,9 +41,9 @@ img {
     border-radius: 3px;
     margin-right: 20px;
     margin-bottom: 50px;
-
-
+    animation: mymove 5s infinite;
 }
+
 
 p {
     
@@ -58,6 +58,8 @@ p {
     font-weight: bold;
     font-family:  'Brush Script MT';
   }
+
+
    footer {
     background-color:#555 ; 
     margin-top: 160px; 
@@ -65,3 +67,6 @@ p {
     text-align: center;
     color: beige;
    }
+   
+  @keyframes mymove {
+    50% {box-shadow: 10px 20px 30px #555;}
