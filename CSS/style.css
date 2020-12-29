@@ -23,11 +23,11 @@ li{
 }
 
 h1 {
-    font-size: 70px;
+    font-size: 50px;
     font-family:'Brush Script MT', cursive;
     text-align : center;
     margin-top: 60px;
-    margin-bottom: 90px;
+    margin-bottom: 100px;
     color: aliceblue;
 
 }
@@ -52,9 +52,9 @@ p {
     word-wrap: break-word;
     text-align: left;
     color: #555;
-    font-size: 35px;
+    font-size: 33px;
     margin-left: 80px;
-    margin-top: 150px;
+    margin-top: 160px;
     font-weight: bold;
     font-family:  'Brush Script MT';
   }
