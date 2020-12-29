@@ -25,6 +25,7 @@ alert('Hello '+userInput);
  }
 
  var usergame = prompt('Is my Favorite color Yellow ? choose  (Yes/No)'); //start with the first question
+ 
   //console.log(usergame);
  console.log(usergame.toLowerCase());
  if (usergame == 'no'){
@@ -61,6 +62,52 @@ alert (' Yes right :D ');
      alert ('No you are wrong I Like horror movies they are my favorite ');
  }
 
+ 
+function questionSix(){
+    var correctAns = 5;
+    var userScore = 0;
+    for(let i = 0; i < 4; i++){
+      var userGuess = parseInt(prompt('Try to guess a number from 1 to 15: you have 4 attempts '));
+      if (userGuess > correctAns){
+        // console.log('Too High');
+        alert('Too High');
+      }else if (userGuess < correctAns){
+        // console.log('Too Low');
+        alert('Too low');
+      }else if ( userGuess === correctAns){
+        // console.log('That\'s Correct');
+        alert('That\'s Correct');
+        userScore += 1;
+      }
+    }
+    // console.log(correctAns);
+    alert('The correct answer is: ' + correctAns);
+    return userScore;
+  }
+  //alert(questionNumSix());
+  // console.log(questionNumSix());
+  
+  function questionSeven(){
+    var userScore = 0;
+    var correctAns = [10, 25, 5, 30, 9, 11, 45, 12, 27, 49];
+    for (let i = 0; i < 6; i++){
+      var userGuess = parseInt(prompt('Try to guess a number from 0 to 50: you have 6 attempt'));
+      // loob through the array to check the answer
+      for (let j = 0; j < correctAns.length; j++){
+        if (userGuess === correctAns[j]){
+          // console.log('That is Correct');
+          alert('That is Correct');
+          userScore += 1;
+        }
+      }
+    }
+    // console.log(correctAns);
+    alert('The correct answers are: ' + correctAns);
+    return userScore;
+  }
+  // console.log(questionNumSix() + questionNumSeven());
+  alert('your final score is: ' + (questionSix() + questionSeven()));
+  
  
  var theLastQ = prompt('So Did You enjoy ? Yes/No'); // to know if the user satisfied or not
 

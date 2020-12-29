@@ -4,7 +4,7 @@ background-color: #e5e193 ;
 
 }
 
-ul {
+.first ul {
         background: #555 ;
         background-size: cover;
         background-position: center;
@@ -16,10 +16,11 @@ ul {
         font-size:20px ;
 
 }
-li{
+li {
     width: 318px;
     margin: 5px;
     padding: 5px;
+    
 }
 
 h1 {
@@ -27,7 +28,7 @@ h1 {
     font-family:'Brush Script MT', cursive;
     text-align : center;
     margin-top: 60px;
-    margin-bottom: 100px;
+    margin-bottom: 150px;
     color: aliceblue;
 
 }
@@ -42,23 +43,53 @@ img {
     margin-right: 20px;
     margin-bottom: 50px;
     animation: mymove 5s infinite;
+    margin-top: 70px;
 }
 
-
-p {
+.second ul li {
     
     width: 18em; 
     border: 0px solid #555;
     word-wrap: break-word;
     text-align: left;
     color: #555;
-    font-size: 33px;
+    font-size: 26px;
     margin-left: 80px;
-    margin-top: 160px;
+    margin-top: 60px;
     font-weight: bold;
-    font-family:  'Brush Script MT';
+    font-family:  Copperplate, Papyrus, fantasy;
+    list-style: circle;
   }
 
+  h2 ,p {
+    font-size: 20px;
+    font-weight: bold;
+    text-align : center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    color: white;
+    background-color: rgb(133, 128, 128);
+    padding: 4px;
+    
+  }
+  p{
+    margin-bottom: 90px;
+  }
+  
+  
+  .third  li {
+    text-align: left;
+    color: #555;
+    font-size: 20px;
+    margin-left: 500px;
+    margin-top: 20px;
+    font-weight: bold;
+    font-family:  Copperplate, Papyrus, fantasy;
+    list-style-type: upper-roman;
+    border: double #555 2px ;
+    
+
+  }
 
    footer {
     background-color:#555 ; 
