@@ -16,7 +16,7 @@ alert('Hello '+userInput);
     alert ('Never mind Im sure you will be ok');
   }
 
-  var first = confirm ('We will play guessing me game with a random general Quwstions ..are you excited?' ); // only takes boolean values (true/ false)
+  var first = confirm ('We will play guessing me game with a random general Questions ..are you excited?' ); // only takes boolean values (true/ false)
  //console.log(first);
  if(first == true){
      alert('Great Lets start :)');
@@ -24,10 +24,10 @@ alert('Hello '+userInput);
      alert('oh no :( Im sure you will have fun so come on!');
  }
 
- var usergame = prompt('Is my Favorite color black ? choose  (Yes/No)'); //start with the first question
+ var usergame = prompt('Is my Favorite color Yellow ? choose  (Yes/No)'); //start with the first question
   //console.log(usergame);
  console.log(usergame.toLowerCase());
- if (usergame == 'yes'){
+ if (usergame == 'no'){
 alert (' Right black is my favorite :D lets go to the next Question ');
  } else {
      alert ('No you are wrong black is my favorite :( lets go to the next Question ');
