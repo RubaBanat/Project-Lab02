@@ -1,12 +1,11 @@
 'use strict'; // use strict mode to prevent doing mistakes 
 
-var userInput = prompt('What is your name?'); //to entract with the user
-alert('Hello '+userInput);
-//console.log (userInput);
+// welcoming user 
+var userName = prompt('Hi, What is Your name?');
+alert('Hello and Welcome ' + userName);
 
 
-
- var user = prompt('How are you feeling today? (good/bad)');
+var user = prompt('How are you feeling today? (good/bad)');
  //console.log(user);
  console.log(user.toLowerCase());
 
@@ -24,101 +23,92 @@ alert('Hello '+userInput);
      alert('oh no :( Im sure you will have fun so come on!');
  }
 
- var usergame = prompt('Is my Favorite color Yellow ? choose  (Yes/No)'); //start with the first question
- 
-  //console.log(usergame);
- console.log(usergame.toLowerCase());
- if (usergame == 'no'){
-alert (' Right black is my favorite :D lets go to the next Question ');
- } else {
-     alert ('No you are wrong black is my favorite :( lets go to the next Question ');
- }
- 
- var usergame1 = prompt('am I 24 Years Old ? choose  (Yes/No)');
-  //console.log(usergame1);
- console.log(usergame1.toLowerCase());
- if (usergame1 === 'yes'){
-alert (' Right Im 24 yers old :D lets go to the next Question ');
- } else {
-     alert ('No you are wrong Im 24 years old :( lets go to the next Question ');
- }
+function aboutMeQ(){
+  var userScore = 0;
+  var QArray =['Am I a Female? (yes/no)',
+    'Yellow is my favorite color? (yes/no)',
+    'Am I 24 Years Old ? (yes/no)',
+    'Do I think before I act ? (yes/no)',
+    'Do I like horror movies? ? (yes/no)'
+  ];
+  var questionAnswers = ['yes', 'no', 'yes', 'yes', 'yes'];
+  // loob the question and the answers
+  for(let i = 0; i < QArray.length; i++){
+    var userAnswer = prompt(QArray[i]).toLowerCase();
+    if(userAnswer === questionAnswers [i]){
+      // console.log('Correct');
+      alert('Correct');
+      userScore += 1;
+    }else {
+      // console.log('No, you are not Correct.');
+      alert('No, you are not Correct.');
+    }
+  }
+  return userScore;
+}
 
-  
- var usergame2 = prompt('Do I think before I act ? choose one (Yes/No)');
-  //console.log(usergame2);
- console.log(usergame2.toLowerCase());
- if (usergame2 === 'yes'){
-alert (' Yes right :D lets go to the next Question ');
- } else {
-     alert ('No you are wrong I think before I act most of the time  :( lets go to the next Question ');
- }
 
- var usergame3 = prompt('Do I like horror movies? ? choose one (Yes / No)'); // last question
-  //console.log(usergame3);
- console.log(usergame3.toLowerCase());
- if (usergame3 === 'yes'){
-alert (' Yes right :D ');
- } else {
-     alert ('No you are wrong I Like horror movies they are my favorite ');
- }
 
- 
-function questionSix(){
-    var correctAns = 5;
-    var userScore = 0;
-    for(let i = 0; i < 4; i++){
-      var userGuess = parseInt(prompt('Try to guess a number from 1 to 15: you have 4 attempts '));
-      if (userGuess > correctAns){
-        // console.log('Too High');
-        alert('Too High');
-      }else if (userGuess < correctAns){
-        // console.log('Too Low');
-        alert('Too low');
-      }else if ( userGuess === correctAns){
-        // console.log('That\'s Correct');
-        alert('That\'s Correct');
+function sixthquestion(){
+  var correctAnswer = 5;
+  var userScore = 0;
+  for(let i = 0; i < 4; i++){
+    var userGuess = parseInt(prompt('An now Try to guess a number from 1 to 15: you have 4 attempts '));
+    if (userGuess > correctAnswer){
+      // console.log('Too High');
+      alert('Too High');
+    }else if (userGuess < correctAnswer){
+      // console.log('Too Low');
+      alert('Too low');
+    }else if ( userGuess === correctAnswer){
+      // console.log('That\'s Correct');
+      alert('That\'s Correct');
+      userScore += 1;
+      break;
+    }
+  }
+  // console.log(correctAns);
+  alert('The correct answer is: ' + correctAnswer);
+  return userScore;
+}
+//alert(questionNumSix());
+// console.log(questionNumSix());
+
+function seventhquestion(){
+  var userScore = 0;
+  var correctAnswer = [10, 5, 30, 25, 1, 49, 40, 12, 27, 35, 9, 15];
+  for (let i = 0; i < 6; i++){
+    var userGuess = parseInt(prompt('Try to guess a number from 0 to 50: you have 6 attempt'));
+    // loob through the array to check the answer
+    for (let j = 0; j < correctAnswer.length; j++){
+      if (userGuess === correctAnswer[j]){
+        // console.log('That is Correct');
+        alert('That is Correct');
         userScore += 1;
+        break;
       }
     }
-    // console.log(correctAns);
-    alert('The correct answer is: ' + correctAns);
-    return userScore;
-  }
-  //alert(questionNumSix());
-  // console.log(questionNumSix());
-  
-  function questionSeven(){
-    var userScore = 0;
-    var correctAns = [10, 25, 5, 30, 9, 11, 45, 12, 27, 49];
-    for (let i = 0; i < 6; i++){
-      var userGuess = parseInt(prompt('Try to guess a number from 0 to 50: you have 6 attempt'));
-      // loob through the array to check the answer
-      for (let j = 0; j < correctAns.length; j++){
-        if (userGuess === correctAns[j]){
-          // console.log('That is Correct');
-          alert('That is Correct');
-          userScore += 1;
-        }
-      }
+    if (userScore >= 1){
+      break;
     }
-    // console.log(correctAns);
-    alert('The correct answers are: ' + correctAns);
-    return userScore;
   }
-  // console.log(questionNumSix() + questionNumSeven());
-  alert('your final score is: ' + (questionSix() + questionSeven()));
-  
- 
- var theLastQ = prompt('So Did You enjoy ? Yes/No'); // to know if the user satisfied or not
+  // console.log(correctAns);
+  alert('The correct answers are: ' + correctAnswer);
+  return userScore;
+}
+// console.log(sixthquestion() + seventhquestion());
+alert('your final score is: ' + (aboutMeQ() + sixthquestion() + seventhquestion()));
 
- switch (theLastQ) {
 
- case 'yes':
- alert ('That is great ' +userInput + ' have fun in my webpage');
- break;
- case 'no':
- alert ('sorry for bothering you '+ userInput + ' Hope you enjoy my webpage' );
- break;
- 
+var theLastQ = prompt('So Did You enjoy ? Yes/No'); // to know if the user satisfied or not
+
+switch (theLastQ) {
+
+case 'yes':
+alert ('That is great ' +userName + ' have fun in my webpage');
+break;
+case 'no':
+alert ('sorry for bothering you '+ userName + ' Hope you enjoy my webpage' );
+break;
 
 }
