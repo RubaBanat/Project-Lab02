@@ -50,10 +50,10 @@ function aboutMeQ(){
 
 
 function sixthquestion(){
-  var correctAnswer = 5;
+  var correctAnswer = 1996;
   var userScore = 0;
   for(let i = 0; i < 4; i++){
-    var userGuess = parseInt(prompt('And now Try to guess a number of my family members : you have 4 attempts '));
+    var userGuess = parseInt(prompt('You know my age now so try guess the year I was born in (just use your brain ;) ) : you have 4 attempts '));
     if (userGuess > correctAnswer){
       // console.log('Too High');
       alert('Too High');
@@ -76,9 +76,9 @@ function sixthquestion(){
 
 function seventhquestion(){
   var userScore = 0;
-  var correctAnswer = [10, 5, 30, 25, 1, 49, 40, 12, 27, 35, 9, 15];
+  var correctAnswer = ['Prison Break', 'Game Of Thrones', 'How to get away with murder','elite','la mante', ];
   for (let i = 0; i < 6; i++){
-    var userGuess = parseInt(prompt('Try to guess a number from 0 to 50: you have 6 attempt'));
+    var userGuess = parseInt(prompt('Try to guess one of my favorite TV Shows : you have 6 attempt'));
     // loob through the array to check the answer
     for (let j = 0; j < correctAnswer.length; j++){
       if (userGuess === correctAnswer[j]){
@@ -97,7 +97,7 @@ function seventhquestion(){
   return userScore;
 }
 // console.log(sixthquestion() + seventhquestion());
-alert('your final score is: ' + (aboutMeQ() + sixthquestion() + seventhquestion()));
+alert('your final score is: ' + (aboutMeQ() + sixthquestion() + seventhquestion()) + 'out of 7');
 
 
 var theLastQ = prompt('So Did You enjoy ? Yes/No'); // to know if the user satisfied or not
