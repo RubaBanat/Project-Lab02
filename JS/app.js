@@ -6,26 +6,26 @@ alert('Hello and Welcome ' + userName);
 
 
 var user = prompt('How are you feeling today? (good/bad)');
- //console.log(user);
- console.log(user.toLowerCase());
+//console.log(user);
+console.log(user.toLowerCase());
 
- if (user.toLowerCase() === 'good') {
-     alert (' We are glad you are feeling good');
-  } else {
-    alert ('Never mind Im sure you will be ok');
-  }
+if (user.toLowerCase() === 'good') {
+  alert(' We are glad you are feeling good');
+} else {
+  alert('Never mind Im sure you will be ok');
+}
 
-  var first = confirm ('We will play guessing me game with a random general Questions ..are you excited?' ); // only takes boolean values (true/ false)
- //console.log(first);
- if(first == true){
-     alert('Great Lets start :)');
- } else {
-     alert('oh no :( Im sure you will have fun so come on!');
- }
+var first = confirm('We will play guessing me game with a random general Questions ..are you excited?'); // only takes boolean values (true/ false)
+//console.log(first);
+if (first == true) {
+  alert('Great Lets start :)');
+} else {
+  alert('oh no :( Im sure you will have fun so come on!');
+}
 
-function aboutMeQ(){
+function aboutMeQ() {
   var userScore = 0;
-  var QArray =['Am I a Female? (yes/no)',
+  var QArray = ['Am I a Female? (yes/no)',
     'Yellow is my favorite color? (yes/no)',
     'Am I 24 Years Old ? (yes/no)',
     'Do I think before I act ? (yes/no)',
@@ -33,13 +33,13 @@ function aboutMeQ(){
   ];
   var questionAnswers = ['yes', 'no', 'yes', 'yes', 'yes'];
   // loob the question and the answers
-  for(let i = 0; i < QArray.length; i++){
+  for (let i = 0; i < QArray.length; i++) {
     var userAnswer = prompt(QArray[i]).toLowerCase();
-    if(userAnswer === questionAnswers [i]){
+    if (userAnswer === questionAnswers[i]) {
       // console.log('Correct');
       alert('Correct');
       userScore += 1;
-    }else {
+    } else {
       // console.log('No, you are not Correct.');
       alert('No, you are not Correct.');
     }
@@ -49,6 +49,7 @@ function aboutMeQ(){
 
 
 
+<<<<<<< HEAD
 function sixthquestion(){
   var correctAnswer = 1996;
   var userScore = 0;
@@ -61,6 +62,20 @@ function sixthquestion(){
       // console.log('Too Low');
       alert('Too low');
     }else if ( userGuess === correctAnswer){
+=======
+function sixthquestion() {
+  var correctAnswer = 1996;
+  var userScore = 0;
+  for (let i = 0; i < 4; i++) {
+    var userGuess = parseInt(prompt('You know my age now so try guess the year I was born in (just use your brain ) you have four attempts'));
+        if (userGuess > correctAnswer) {
+      // console.log('Far');
+      alert('Far');
+    } else if (userGuess < correctAnswer) {
+      // console.log('Close');
+      alert('Close');
+    } else if (userGuess === correctAnswer) {
+>>>>>>> c1ccdce04aad201fd8d99535dbc04e0260584d93
       // console.log('That\'s Correct');
       alert('That\'s Correct');
       userScore += 1;
@@ -74,21 +89,27 @@ function sixthquestion(){
 //alert(questionNumSix());
 // console.log(questionNumSix());
 
-function seventhquestion(){
+function seventhquestion() {
   var userScore = 0;
+<<<<<<< HEAD
   var correctAnswer = ['Prison Break', 'Game Of Thrones', 'How to get away with murder','elite','la mante', ];
   for (let i = 0; i < 6; i++){
     var userGuess = parseInt(prompt('Try to guess one of my favorite TV Shows : you have 6 attempt'));
+=======
+  var correctAnswer = ['prison break', 'game of thrones', 'how to get away with murder', 'elite', 'la mante', 'the inimate', 'dexter'];
+  for (let i = 0; i < 6; i++) {
+    var userGuess = prompt('Try to guess one of my favorite TV shows : you have 6 attempt');
+>>>>>>> c1ccdce04aad201fd8d99535dbc04e0260584d93
     // loob through the array to check the answer
-    for (let j = 0; j < correctAnswer.length; j++){
-      if (userGuess === correctAnswer[j]){
+    for (let j = 0; j < correctAnswer.length; j++) {
+      if (userGuess.toLowerCase() === correctAnswer[j]) {
         // console.log('That is Correct');
         alert('That is Correct');
         userScore += 1;
         break;
       }
     }
-    if (userScore >= 1){
+    if (userScore >= 1) {
       break;
     }
   }
@@ -104,11 +125,11 @@ var theLastQ = prompt('So Did You enjoy ? Yes/No'); // to know if the user satis
 
 switch (theLastQ) {
 
-case 'yes':
-alert ('That is great ' +userName + ' have fun in my webpage');
-break;
-case 'no':
-alert ('sorry for bothering you '+ userName + ' Hope you enjoy my webpage' );
-break;
+  case 'yes':
+    alert('That is great ' + userName + ' have fun in my webpage');
+    break;
+  case 'no':
+    alert('sorry for bothering you ' + userName + ' Hope you enjoy my webpage');
+    break;
 
 }
