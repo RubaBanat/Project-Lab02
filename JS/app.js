@@ -49,20 +49,6 @@ function aboutMeQ() {
 
 
 
-<<<<<<< HEAD
-function sixthquestion(){
-  var correctAnswer = 1996;
-  var userScore = 0;
-  for(let i = 0; i < 4; i++){
-    var userGuess = parseInt(prompt('You know my age now so try guess the year I was born in (just use your brain ;) ) : you have 4 attempts '));
-    if (userGuess > correctAnswer){
-      // console.log('Too High');
-      alert('Too High');
-    }else if (userGuess < correctAnswer){
-      // console.log('Too Low');
-      alert('Too low');
-    }else if ( userGuess === correctAnswer){
-=======
 function sixthquestion() {
   var correctAnswer = 1996;
   var userScore = 0;
@@ -75,7 +61,6 @@ function sixthquestion() {
       // console.log('Close');
       alert('Close');
     } else if (userGuess === correctAnswer) {
->>>>>>> c1ccdce04aad201fd8d99535dbc04e0260584d93
       // console.log('That\'s Correct');
       alert('That\'s Correct');
       userScore += 1;
@@ -91,15 +76,9 @@ function sixthquestion() {
 
 function seventhquestion() {
   var userScore = 0;
-<<<<<<< HEAD
-  var correctAnswer = ['Prison Break', 'Game Of Thrones', 'How to get away with murder','elite','la mante', ];
-  for (let i = 0; i < 6; i++){
-    var userGuess = parseInt(prompt('Try to guess one of my favorite TV Shows : you have 6 attempt'));
-=======
   var correctAnswer = ['prison break', 'game of thrones', 'how to get away with murder', 'elite', 'la mante', 'the inimate', 'dexter'];
   for (let i = 0; i < 6; i++) {
     var userGuess = prompt('Try to guess one of my favorite TV shows : you have 6 attempt');
->>>>>>> c1ccdce04aad201fd8d99535dbc04e0260584d93
     // loob through the array to check the answer
     for (let j = 0; j < correctAnswer.length; j++) {
       if (userGuess.toLowerCase() === correctAnswer[j]) {
