@@ -4,6 +4,7 @@
 
 *My name is Ruba Banat and I'm an Economist I finished University in 2018 now I'm trying to learning something new and I hope everything get better for me and you guys*
 
+
 ### about me webpage
 
 I build This webpage to aply JavaScript and CSS language 
@@ -13,3 +14,10 @@ and some extra css styles
 
 
 ## Author: *Ruba Banat*
+
+
+## Pair Programming:
+- driver: Salah Alawneh
+- navigator: Ruba Banat
+*the main change was on quesion four ruba wanted to change the question*
+*edited and added some functions to Ruba questions*
