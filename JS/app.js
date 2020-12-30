@@ -53,7 +53,7 @@ function sixthquestion(){
   var correctAnswer = 5;
   var userScore = 0;
   for(let i = 0; i < 4; i++){
-    var userGuess = parseInt(prompt('And now Try to guess a number from 1 to 15: you have 4 attempts '));
+    var userGuess = parseInt(prompt('And now Try to guess a number of my family members : you have 4 attempts '));
     if (userGuess > correctAnswer){
       // console.log('Too High');
       alert('Too High');
